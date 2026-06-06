@@ -1,0 +1,5 @@
+connector.name=iceberg
+iceberg.catalog.type=glue
+hive.metastore.glue.region=${S3_REGION}
+iceberg.file-format=parquet
+fs.native-s3.enabled=true

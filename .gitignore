@@ -1,0 +1,9 @@
+env.local.sh
+worktrees/
+results/
+logs/
+tmp/
+*.log
+*.swp
+.DS_Store
+scale_submit.sh

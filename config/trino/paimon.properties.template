@@ -1,0 +1,14 @@
+connector.name=paimon
+metastore=filesystem
+warehouse=${S3_PAIMON}
+fs.native-s3.enabled=true
+s3.max-connections=5000
+s3.retry-count=30
+s3.retry-mode=adaptive
+s3.max-error-retries=100
+s3.tcp-keep-alive=true
+s3.connection-ttl=5m
+s3.connection-max-idle-time=2m
+s3.connect-timeout=2m
+s3.socket-timeout=2m
+s3.streaming.part-size=256MB
