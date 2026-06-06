@@ -8,9 +8,9 @@
 | 格式 | HyBench SF100 | HyBench SF1000 | CHBenchmark WH10000 |
 |------|:---:|:---:|:---:|
 | Iceberg | ✓ | ✓ | ✓ |
-| Paimon | ✓ | ✓ | |
-| Lance | ✓ | | |
-| Delta Lake | ✓ | | |
+| Paimon | ✓ | ✓ | ✓ |
+| Lance | ✓ | ✓ | |
+| Delta Lake | ✓ | ✓ | |
 | Hudi | ✓ | ✓ | |
 | Retina / Pixels | ✓ | ✓ | ✓ |
 
