@@ -1,6 +1,6 @@
 # lakehouse-experiment-agent
 
-统一的湖仓格式（Iceberg / Paimon / Lance / Delta Lake / Retina）测试工具，
+统一的湖仓格式（Iceberg / Paimon / Lance / Delta Lake / Hudi / Retina / TiDB）测试工具，
 基于 [湖仓系统标准测试模板](docs/湖仓系统标准测试模板.md) 的 9 步标准流程。
 
 ## 支持的格式与数据集
@@ -13,6 +13,7 @@
 | Delta Lake | ✓ | ✓ | |
 | Hudi | ✓ | ✓ | |
 | Retina / Pixels | ✓ | ✓ | ✓ |
+| TiDB / TiFlash | ✓ | | |
 
 ## 快速开始
 
@@ -44,6 +45,18 @@ source env.sh
 ./scripts/04_cdc/cdc_iceberg_hybench_sf100.sh           # 启动 CDC
 ./scripts/07_ap_query/ap_iceberg_static.sh              # AP baseline
 ./scripts/07_ap_query/ap_iceberg_after_1pct.sh          # AP after 1% CDC
+```
+
+TiDB / TiFlash 示例：
+
+```bash
+source env.sh
+./scripts/01_environment/setup_tidb.sh
+./scripts/02_import/import_tidb_hybench_sf100.sh
+./scripts/03_backup/backup_tidb_database.sh
+./scripts/04_cdc/cdc_tidb_hybench_sf100.sh
+./scripts/05_validate/validate_tidb.sh
+./scripts/07_ap_query/ap_tidb_static.sh
 ```
 
 ## 目录结构
